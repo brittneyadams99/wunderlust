@@ -107,7 +107,6 @@ footer {
     padding: 10px 0;
 }
 
-/* Media Queries for larger screens */
 
 /* Small screens (min-width: 600px) */
 @media (min-width: 600px) {
@@ -150,5 +149,37 @@ footer {
 
     footer {
         padding: 15px 0;
+    }
+}
+
+/* Large screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    body {
+        padding: 60px;
+    }
+    
+    header {
+        font-size: 2.5em;
+        padding: 25px 0;
+    }
+    
+    nav {
+        margin: 40px 0;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+
+    nav ul li {
+        padding: 18px;
+    }
+
+    main {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        padding: 20px 0;
     }
 }
