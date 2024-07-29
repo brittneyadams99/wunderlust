@@ -1,0 +1,154 @@
+/* Brittney Adams */
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Fonts and Colors */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Define custom properties (variables) */
+:root {
+    --primary-color: #4CAF50; /* Primary color */
+    --secondary-color: #333; /* Secondary color */
+    --background-color: #f9f9f9; /* Background color */
+    --text-color: #333; /* Text color */
+    --font-primary: 'Roboto', sans-serif; /* Primary font */
+    --font-secondary: 'Lobster', cursive; /* Secondary font */
+}
+
+/* Global styles and mobile-first design */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--font-secondary);
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav ul li {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for larger screens */
+
+/* Small screens (min-width: 600px) */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        padding: 12px;
+    }
+}
+
+/* Medium screens (min-width: 768px) */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+    
+    header {
+        font-size: 2em;
+        padding: 20px 0;
+    }
+    
+    nav {
+        margin: 30px 0;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li {
+        padding: 15px;
+    }
+
+    main {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
