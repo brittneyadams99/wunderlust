@@ -100,8 +100,7 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribute space between elements */
-    width: 100%; /* Ensure the header takes the full width */
+    justify-content: space-between; 
 }
 
 #logo img {
@@ -114,7 +113,7 @@ header h1 {
     font-family: var(--font-primary);
     font-size: 2rem;
     color: var(--black);
-    flex-grow: 1; /* Allow the h1 to take up available space */
+    flex-grow: 1;
 }
 
 header p {
@@ -417,24 +416,24 @@ footer a {
     header {
         padding: 20px 3px;
         display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Center-align elements */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
     #logo {
-        order: 1; /* Ensure the logo appears first */
+        order: 1; 
     }
 
     header h1 {
-        order: 2; /* Move the h1 below the logo */
-        margin-top: 10px; /* Add some space between logo and h1 */
-        text-align: left; /* Center-align text */
+        order: 2; 
+        margin-top: 10px; 
+        text-align: left;
         margin-left: 20px;
     }
 
     header p {
-        order: 3; /* Move the p below the h1 */
-        margin-top: 5px; /* Add some space between h1 and p */
-        text-align: left; /* Center-align text */
+        order: 3; 
+        margin-top: 5px; 
+        text-align: left; 
         margin-left: 20px;
         margin-bottom: 20px;
     }
@@ -450,9 +449,9 @@ footer a {
         height: 45px;
         background-color: var(--yellow);
         padding: 10px 20px;
-        display: flex; /* Use flexbox for centering */
-        align-items: center; /* Vertically center the label */
-        justify-content: center; /* Horizontally center the label */
+        display: flex; 
+        align-items: center;
+        justify-content: center; 
     }
     
     nav label {
@@ -460,10 +459,10 @@ footer a {
         color: var(--black);
         font-weight: bold;
         text-transform: uppercase;
-        cursor: pointer; /* Make sure the label is clickable */
-        margin-bottom: 20px; /* Add space below the label */
-        width: auto; /* Adjust the width to fit content */
-        text-align: center; /* Center the text within the label */
+        cursor: pointer; 
+        margin-bottom: 20px; 
+        width: auto; 
+        text-align: center; 
     }
     
     nav input[type="checkbox"] {
@@ -485,7 +484,7 @@ footer a {
     }
     
     nav input[type="checkbox"]:checked ~ ul {
-        display: flex; /* Display the dropdown when the checkbox is checked */
+        display: flex; 
     }
     
     nav a {
@@ -514,8 +513,8 @@ footer a {
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
-        height: 600px; /* Increase height for medium screens */
-        background: linear-gradient(to bottom, var(--teal) 10%, var(--white) 40%); /* Adjust the gradient to show more blue */
+        height: 600px; 
+        background: linear-gradient(to bottom, var(--teal) 10%, var(--white) 40%);
     }
 
     #logo {
@@ -530,14 +529,14 @@ footer a {
     }
 
     #logo {
-        grid-column: 1 / 2; /* Logo on the left */
+        grid-column: 1 / 2; 
         margin-top: -200px;
     }
 
     header h1, 
     header p {
-        grid-column: 2 / 3; /* h1 and p on the right */
-        text-align: left; /* Align text to the left */
+        grid-column: 2 / 3;
+        text-align: left; 
     }
     
     header h1 {
@@ -561,25 +560,25 @@ footer a {
         margin-top: -720px;
     }
     #logo img {
-        width: 200px; /* Adjust the logo size as needed */
+        width: 200px;
         height: auto;
         margin-top: 20px;
     }
     nav {
-        margin-top: 100px; /* Add some space between the header and the nav */
+        margin-top: 100px; 
         width: 100%;
         background-color: transparent;
         display:inline-flex;
-        justify-content: space-evenly; /* Space items evenly across the nav */
+        justify-content: space-evenly; 
         padding: 10px 0;
-        box-sizing: border-box; /* Ensure consistent sizing */
+        box-sizing: border-box; 
     }
 
     nav ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly; /* Space menu items evenly across the ul */
-        width: 100%; /* Make the ul span the full width of the nav */
+        justify-content: space-evenly; 
+        width: 100%; 
         background-color: transparent;
         border: none;
         padding: 0;
@@ -589,7 +588,7 @@ footer a {
 
     nav ul li {
         padding: 0;
-        margin: 0; /* Remove left margin to ensure even spacing */
+        margin: 0; 
         list-style: none;
     }
 
@@ -606,7 +605,7 @@ footer a {
     }
 
     #menu-toggle label {
-        display: none; /* Hide the Menu label */
+        display: none; 
     }
 
     main {
@@ -644,7 +643,7 @@ footer a {
     }
 
     #img-grid picture {
-        grid-column: span 2; /* Make the bottom image span across both columns */
+        grid-column: span 2; 
     }
 
     #plan h3 {
@@ -652,19 +651,19 @@ footer a {
     }
 
     #plan div {
-        display: grid;  /* Use grid layout */
-        grid-template-columns: repeat(2, 1fr);  /* 2 by 2 grid */
-        gap: 10px 15px;  /* Adjust gap between grid items */
-        justify-items: center;  /* Center items horizontally */
+        display: grid;  
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 10px 15px;  
+        justify-items: center; 
     }
 
     #plan section {
-        width: 250px;  /* Adjust section width */
-        height: 220px;  /* Adjust section height */
+        width: 250px;  
+        height: 220px; 
     }
 
     #testimonials {
-        padding: 20px 50px;  /* Adjust padding */
+        padding: 20px 50px;  
         text-align: center;
     }
 
@@ -685,26 +684,26 @@ footer a {
     }
 
     #testimonials div {
-        display: grid;  /* Use grid layout */
-        grid-template-columns: repeat(2, 1fr);  /* 2 by 2 grid */
-        gap: 20px;  /* Add gap between grid items */
-        justify-items: center;  /* Center items horizontally */
+        display: grid;  
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 20px;  
+        justify-items: center;  
     }
 
     #testimonials section {
-        width: 100%;  /* Ensure sections take full width */
-        max-width: 300px;  /* Limit the maximum width of sections */
+        width: 100%; 
+        max-width: 300px;  
     }
 
     #testimonials img {
-        width: 200px;  /* Increase image size */
-        height: 200px;  /* Increase image size */
+        width: 200px;  
+        height: 200px;  
         border-radius: 50%;
         margin-bottom: 10px;
     }
 
     #about h3 {
-        font-size: 2rem;  /* Increase font size of h3 */
+        font-size: 2rem;  
     }
 
     #about h4 {
@@ -715,28 +714,28 @@ footer a {
         font-size: 1rem;
     }
     #about div {
-        display: flex;  /* Use flex for row layout */
-        flex-direction: row;  /* Arrange children in a row */
-        justify-content: space-between;  /* Adjust spacing between items */
+        display: flex;  
+        flex-direction: row;  
+        justify-content: space-between;  
     }
 
     #about section {
-        flex: 1;  /* Allow sections to grow equally */
-        max-width: 200px;  /* Limit section width */
+        flex: 1;  
+        max-width: 200px;  
     }
 
     #contact {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 30px 40px;  /* Adjust padding */
+        padding: 30px 40px;  
     }
     #contact h3 {
-        align-self: flex-start;  /* Align h3 to the left */
+        align-self: flex-start;  
     }
 
     #contact input[type="submit"] {
-        width: 200px;  /* Increase button width */
+        width: 200px;  
         margin-left: auto;
         display: block;
     }
@@ -744,11 +743,11 @@ footer a {
     #contact fieldset {
         flex-direction: row;
         align-items: center;
-        max-width: 500px;  /* Limit fieldset width */
+        max-width: 500px;  
     }
 
     #contact fieldset label {
-        margin-right: 10px;  /* Adjust right margin */
+        margin-right: 10px;  
         margin-bottom: 0;
     }
 
@@ -770,20 +769,19 @@ footer a {
     
     header {
         display: grid;
-        grid-template-columns: auto 1fr; /* Logo takes up auto width, text takes up remaining space */
-        align-items: center; /* Vertically center the logo and text */
-        height: 60vh; /* Increase the height of the header */
-        background: linear-gradient(to bottom, var(--blue), var(--white)); /* Add more blue to the gradient */
+        grid-template-columns: auto 1fr; 
+        align-items: center; 
+        background: linear-gradient(to bottom, var(--teal), var(--white));
     }
 
     #logo {
-        grid-column: 1 / 2; /* Logo on the left */
+        grid-column: 1 / 2; 
     }
 
     header h1, 
     header p {
-        grid-column: 2 / 3; /* h1 and p on the right */
-        text-align: left; /* Align text to the left */
+        grid-column: 2 / 3; 
+        text-align: left; 
     }
     
     header h1 {
@@ -791,8 +789,8 @@ footer a {
         margin: 0;
         padding: 0;
         line-height: 1;
-        margin-top: 40px;
         display: block;
+        margin-top: -120px;
     }
     
     header p {
@@ -801,38 +799,39 @@ footer a {
         margin-left: -3px;
         line-height: 1;
         display: block;
-        position: relative;
-        top: -0.25em; /* Adjust this value to fine-tune the alignment */
-    }
+        margin-top: -650px;
+       }
+
     #logo img {
-        width: 250px; /* Adjust the logo size as needed */
+        width: 250px; 
         height: auto;
+        margin-top: 100px;
     }
         nav {
-        margin-top: 150px; /* Add some space between the header and the nav */
+        margin-top: 150px; 
         width: 100%;
         background-color: transparent;
         display: flex;
-        justify-content: space-evenly; /* Space items evenly across the nav */
+        justify-content: space-evenly;
         padding: 10px 0;
-        box-sizing: border-box; /* Ensure consistent sizing */
-    }
+        box-sizing: border-box; 
+        }
     nav ul {
         position: fixed;
-        top: 0;  /* Align to the very top of the viewport */
-        right: 0; /* Align to the right side */
-        width: 100%; /* Make the nav bar take the full width of the viewport */
-        background-color: var(--yellow); /* Set background color if needed */
-        padding: 0; /* Remove padding for a snug fit at the top */
-        box-sizing: border-box; /* Ensure no extra width from padding */
-        z-index: 9999; /* Ensure nav is on top of other elements */
+        top: 0;
+        right: 0; 
+        width: 100%; 
+        background-color: var(--yellow); 
+        padding: 0; 
+        box-sizing: border-box; 
+        z-index: 9999; 
     }
 
     nav ul {
         flex-direction: row;
         justify-content: flex-end;
-        background-color: transparent; /* Transparent background */
-        border: none; /* Remove border */
+        background-color: transparent; 
+        border: none; 
     }
 
     nav ul li {
@@ -841,41 +840,37 @@ footer a {
 
     nav ul li a {
         padding: 10px 20px;
-        background-color: var(--white); /* Set background color */
-        color: var(--black); /* Set text color */
+        background-color: var(--white); 
+        color: var(--black); 
         display: block;
         transition: background-color 0.3s ease, border-color 0.3s ease;
     }
 
     nav ul li a:hover {
-        background-color: var(--yellow); /* Set hover color */
+        background-color: var(--yellow); 
     }
 
     #menu-toggle label {
-        display: none; /* Hide menu toggle label */
+        display: none; 
     }
 
     #intro {
         display: grid;
-        grid-template-columns: 1fr 1.5fr; /* Make the text section take up more space */
+        grid-template-columns: 1fr 1.5fr; 
         align-items: center;
-        padding: 50px 0px; /* Increase padding to make the section wider */
+        margin-top: -300px;
     }
 
     #intro h2, 
     #intro p {
         grid-column: 1 / 2;
         text-align: left;
+        margin-top: -10px;
     }
 
-    #intro h2 {
-        margin-bottom: -100px;
-        margin-left: -5px;
-    }
 
     #intro p {
         font-size: 15px;
-        margin-top: -150px;
     }
 
     #img-grid {
@@ -884,13 +879,14 @@ footer a {
 
     #plan {
         padding: 50px;
+        width: 100%;
     }
     
     #plan div {
         display: flex;
         flex-direction: row;
         gap: 20px;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #testimonials {
